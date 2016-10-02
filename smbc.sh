@@ -3,14 +3,14 @@
 ##########################################################################################
 # Name: smbcontrol                                                                 
 # Author: Aren <alex13gamerz@gmail.com>                                                   
-# Version: 3.0-alpha                                                                           
+# Version: 3.0.1-rc                                                                           
 # Description: This script will make your administration of samba easier.
 # LICENSE: GNU GPL    
 ##########################################################################################
 
 function usage {
 	echo """Usage: smbc [OPTIONS]    
-	OPTIONS:        
+        OPTIONS:        
 		-e      --> enables shared user
 	        -d      --> disables shared user
 	        -a <IP> --> Adds <IP> to trusted networks
