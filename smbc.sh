@@ -8,14 +8,14 @@
 # LICENSE: GNU GPL    
 ##########################################################################################
 
-function usage{
+function usage {
 	echo """Usage: smbc [OPTIONS]    
-	     OPTIONS:        
-	           -e      --> enables shared user
-	           -d      --> disables shared user
-	           -a <IP> --> Adds <IP> to trusted networks
-	           -D <IP> --> Removes <IP> from trusted networks
-	           -l      --> Shows the list of the trusted networks"""
+	OPTIONS:        
+		-e      --> enables shared user
+	        -d      --> disables shared user
+	        -a <IP> --> Adds <IP> to trusted networks
+	        -D <IP> --> Removes <IP> from trusted networks
+	        -l      --> Shows the list of the trusted networks"""
 }
 
 if [[ $EUID -ne 0 ]]; then
