@@ -9,7 +9,7 @@
 ##########################################################################################
 
 function usage{
-	echo """Usage: smb [OPTIONS]    
+	echo """Usage: smbc [OPTIONS]    
 	     OPTIONS:        
 	           -e      --> enables shared user
 	           -d      --> disables shared user
