@@ -17,7 +17,8 @@ function usage {
 		-d <user>	--> 	Disables given user
 		-a <IP>		--> 	Adds <IP> to trusted networks
 		-D <IP>		--> 	Removes <IP> from trusted networks
-		-l		--> 	Shows the list of the trusted networks"""
+		-l		--> 	Shows the list of the trusted networks
+		-h --help	-->	Shows this help"""
 	exit 1
 }
 
@@ -35,6 +36,8 @@ else
 		if [[ $1 = "-l" ]]; then
 			echo "The trusted networks are:" 
 			tail -n +2 /opt/smbcontrol/trusted_ips | while read i; do echo "			- $i"; done
+		elif [[ $1 = "-h" ]] || [[ $1 = "--help" ]]; then
+			usage
 
 		else
 			echo "Parameter error"
